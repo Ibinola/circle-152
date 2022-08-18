@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Phonie</title>
+  </head>
+  <body class="flex">
+    <div class="container">
+      <header class="container-header flex">
+        <a href="#"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <h3 class="title">Buy Airtime</h3>
+      </header>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <h2>make some magic here!!</h2>
+      <form class="form-section">
+        <div class="phone flex">
+          <select class="country-code" name="country-code" id="">
+            <option value="+234">+234</option>
+          </select>
+
+          <div class="mobile flex">
+            <input
+              type="tel"
+              class="mobile-number"
+              placeholder="Mobile Number"
+              maxlength="11"
+              required
+            />
+
+            <div class="network-logo"></div>
+
+            <ul class="suggestion-list"></ul>
+          </div>
+        </div>
+
+        <p class="error-msg"></p>
+
+        <p>
+          <input type="text" id="Amount" placeholder="Amount(₦)" required />
+        </p>
+        <button id="button">
+          Continue <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </form>
+    </div>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
+
+    <!-- <script src="./testins.js"></script> -->
     <!-- // ============= EEND DO NOT EDIT ============== // -->
-</body>
+  </body>
 </html>
